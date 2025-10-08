@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html class="root">
+		<head>
+				<link rel="stylesheet" href="styles.css">
+		</head>
+		<body class="bdy">
+				<audio id="audio" src="res/drn.wav" loop>
+				</audio>
+				<img class="main_bg" id="main_bg" src="bg_main1_dim.png"></img>
+				<img class="nd_bg" id="nd_bg" src="bg_main1_bright.png"></img>
+				<img class="cover_bg" id="cover_bg" src="res/SDM/SDM_Bcover.png"></img>
+				<div class="d_menu" id="d_menu">
+						<img class="logo" id="logo" src="logo1_d3.png"></img>
+						<img class="bc" id="bc" src="res/bc_s.png"></img>
+						<img class="music" id="music" src="res/music.png" onMouseOver="this.src='res/music_h.png'" onMouseOut="this.src='res/music.png'"></img>
+						<img class="plus" id="plus" src="res/plus_s_h.png" onMouseOver="this.src='res/plus_s.png'" onMouseOut="this.src='res/plus_s_h.png'"></img>
+						<img class="minus" id="minus" src="res/minus_s_h.png" onMouseOver="this.src='res/minus_s.png'" onMouseOut="this.src='res/minus_s_h.png'"></img>
+						<div class="player_wrap" id="player_wrap">
+								<input type="image" src="res/pause_s.png" class="play_button" id="p_button"></input>
+						</div>
+				</div>
+				<div class="wrap_music" id="music_menu">
+				</div>
+
+				<script type="text/javascript" src="main_src.js" defer></script>
+				<script type="text/javascript" src="music.js" defer></script>
+				<script type="text/javascript" src="player.js" defer></script>
+		</body>
+</html>
