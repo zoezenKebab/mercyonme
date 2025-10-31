@@ -204,7 +204,7 @@ function get_tracks() {
 
 		let album_title = document.createElement("div")
 		//WHAT IF MORE ALBUMS ??
-		album_title.innerText = "Sons du Ménisque vol.1"
+		album_title.innerText = "Sons du Menisque vol.1"
 		album_title.style.fontFamily = "monospace"
 		album_title.style.fontSize = "24px"
 		album_title.style.fontWeight = "bold"
