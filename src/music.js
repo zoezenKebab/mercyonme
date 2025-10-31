@@ -70,7 +70,7 @@ function get_some_tunes() {
 				cover.style.left = "0%"
 				cover.style.position = "relative"
 
-				cover.setAttribute("src", "res/SDM/SDMvol1.png")
+				cover.setAttribute("src", "res/covers/SDMvol1.png")
 				album.appendChild(cover)
 
 		}

@@ -72,7 +72,7 @@ function p_play() {
 		update_buttons(target_button, 1)
 		target_text.style.opacity = "0.9"
 		button.src =  "res/pause_s.png"
-		audio.src = "res/SDM/" + target + ".wav"
+		audio.src = "res/sounds/SDM/" + target + ".wav"
 		audio.play()
 
 		//ensure all buttons gets good styling on playing
@@ -177,7 +177,7 @@ function playlist_setup() {
 				window.now_playing = TRACK_ORDER[new_song_idx]
 				//NEEDS FUTURE PROOFING
 				if (new_song_idx == 6) { new_song_idx = 0 }
-				let target_song = "res/SDM/" + TRACK_ORDER[new_song_idx] + ".wav"
+				let target_song = "res/sounds/SDM/" + TRACK_ORDER[new_song_idx] + ".wav"
 
 				audio.src = target_song
 				audio.load()
