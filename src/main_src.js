@@ -5,6 +5,7 @@ window.onload = function() {
 		main()
 		responsive_ui()
 		console.log(":3")
+		console.log("hhw")
 };
 
 //placeholder
