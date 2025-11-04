@@ -90,6 +90,7 @@ function trans_1() {
 
 		bg_anim.onfinish = (event) => {
 				main_bg.setAttribute("src", "res/bg_main1.png")
+				document.getElementById("ico").href="res/main_ico_bright.png"
 		}
 
 		//desactivate onclick of bg

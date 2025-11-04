@@ -1,5 +1,6 @@
 var p_state = 1
-var now_playing = "NULL"
+//playing p_button == playing drn.wav upon entry
+var now_playing = "p_button"
 
 function initialize_drn() {
 		let player = document.getElementById("audio")
@@ -55,7 +56,7 @@ function p_wake() {
 		}
 
 		//PLAYLISTING ANYONE ??
-		if (now_playing != "NULL") {
+		if (now_playing != "p_button") {
 				playlist_setup()
 		}
 }
@@ -67,7 +68,6 @@ function p_play() {
 		let target_button = document.getElementById(target)
 		let target_text = document.getElementById("text_" + target)
 		let master_button = document.getElementById("p_button")
-
 		update_buttons(master_button, 1)
 		update_buttons(target_button, 1)
 		target_text.style.opacity = "0.9"
@@ -84,7 +84,6 @@ function p_stop() {
 		let audio = arguments[1]
 		let target_button = document.getElementById(target)
 		let master_button = document.getElementById("p_button")
-
 		update_buttons(master_button, 0)
 		update_buttons(target_button, 0)
 		audio.pause()
