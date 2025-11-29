@@ -34,8 +34,7 @@ function initialize_master_button() {
 		}
 }
 
-function p_wake() {
-		let target = arguments[0]
+function p_wake(target) {
 		let audio = document.getElementById("audio")
 		audio.loop = false
 		audio.volume = 0.6
@@ -61,9 +60,8 @@ function p_wake() {
 		}
 }
 
-function p_play() {
-		let target = arguments[0]
-		let audio = arguments[1]
+function p_play(target, audio) {
+
 		let button = document.getElementById("p_button")
 		let target_button = document.getElementById(target)
 		let target_text = document.getElementById("text_" + target)
@@ -79,9 +77,7 @@ function p_play() {
 		normalize_buttons(window.now_playing) 
 }
 
-function p_stop() {
-		let target = arguments[0]
-		let audio = arguments[1]
+function p_stop(target, audio) {
 		let target_button = document.getElementById(target)
 		let master_button = document.getElementById("p_button")
 		update_buttons(master_button, 0)
@@ -89,9 +85,7 @@ function p_stop() {
 		audio.pause()
 }
 
-function resume() {
-		let target = arguments[0]
-		let audio = arguments[1]
+function resume(target, audio) {
 		let target_button = document.getElementById(target)
 		let master_button = document.getElementById("p_button")
 		
@@ -100,9 +94,7 @@ function resume() {
 		audio.play()
 }
 
-function update_buttons() {
-		let target = arguments[0]
-		let state = arguments[1]
+function update_buttons(target, state) {
 
 		if (state == 0) {
 				target.src = "res/play_s.png"
@@ -153,8 +145,7 @@ function responsive_ui() {
 }
 
 //everybody knows what a horse is
-function modify_volume() {
-		let target = arguments[0]
+function modify_volume(target) {
 		let audio = document.getElementById("audio")
 
 		if (target == 0 && audio.volume > 0.08) {

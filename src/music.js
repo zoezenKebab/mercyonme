@@ -27,7 +27,7 @@ function get_some_tunes() {
 				album.style.position = "relative"
 				album.style.top = "0%"
 				album.style.left = "0%"
-				album.style.margin = "20px"
+				album.style.margin = "10px"
 				album.style.opacity = "0%"
 				album.id = "album"
 				album.style.cursor = "pointer"
@@ -186,7 +186,7 @@ function get_album() {
 		track_wrapper.style.height = "20%"
 		track_wrapper.style.width = "30%"
 		track_wrapper.style.minWidth = "350px"
-		track_wrapper.style.margin = "20px"
+		track_wrapper.style.margin = "10px"
 		track_wrapper.style.position = "relative"
 		track_wrapper.style.flexWrap = "wrap"
 		track_wrapper.style.flexDirection = "row"
@@ -199,8 +199,7 @@ function get_album() {
 		get_tracks(track_wrapper)
 }
 
-function get_tracks() {
-		let wrapper = arguments[0]
+function get_tracks(wrapper) {
 
 		let album_title = document.createElement("div")
 		//WHAT IF MORE ALBUMS ??
@@ -210,6 +209,8 @@ function get_tracks() {
 		album_title.style.fontWeight = "bold"
 		album_title.style.opacity = "0.6"
 		album_title.style.marginBottom = "22px"
+		album_title.style.position = "relative"
+		album_title.style.top = "0%"
 		album_title.id = "title"
 		wrapper.appendChild(album_title)
 
@@ -220,7 +221,7 @@ function get_tracks() {
 				track_container.style.position = "relative"
 				track_container.style.width = "100%"
 				track_container.style.height = "40px"
-				track_container.style.margin = "5px"
+				track_container.style.margin = "4px"
 				wrapper.appendChild(track_container)
 
 				let play_button = document.createElement("img")
