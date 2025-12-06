@@ -46,6 +46,7 @@ function trans_1() {
 		initialize_drn()
 		initialize_master_button()
 
+
 		let nd_bg = document.getElementById("nd_bg")
 		let main_bg = document.getElementById("main_bg")
 
