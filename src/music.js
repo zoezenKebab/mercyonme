@@ -70,7 +70,7 @@ function get_some_tunes() {
 				cover.style.left = "0%"
 				cover.style.position = "relative"
 
-				cover.setAttribute("src", "res/covers/SDMvol1.png")
+				cover.setAttribute("src", "res/covers/SDMvol1_real_cover.png")
 				album.appendChild(cover)
 
 		}
@@ -264,7 +264,7 @@ function get_tracks(wrapper) {
 				track_container.appendChild(play_button)
 
 				let text_track = document.createElement("div")
-				text_track.innerText = SDM_TRACK_DATA[track_nb][0]
+				text_track.innerText = SDM_TRACK_DATA[track_nb][0] + " - " + SDM_TRACK_DATA[track_nb][1]
 				text_track.style.position = "relative"
 				text_track.style.fontFamily = "monospace"
 				text_track.style.fontSize = "14px"
