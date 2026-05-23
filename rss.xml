@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+ 	<title>mercy!onme</title>
+	<link>https://www.mercyonme.red</link>
+	<description>mercy!onme music and misc.</description>
+	<item>
+		<title>lorem ipsum</title>
+		<link>https://www.mercyonme.red/rss.xml</link>
+		<description>dolor sit amet</description>
+	</item>
+</channel>
+
+</rss>
