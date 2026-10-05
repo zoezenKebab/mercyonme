@@ -70,7 +70,7 @@ function p_play(target, audio) {
 		update_buttons(target_button, 1)
 		target_text.style.opacity = "0.9"
 		button.src =  "res/pause_s.png"
-		audio.src = "res/sounds/SDM/" + target + ".ogg"
+		audio.src = "res/sounds/SDM/" + target + ".wav"
 		audio.play()
 
 		//ensure all buttons gets good styling on playing
